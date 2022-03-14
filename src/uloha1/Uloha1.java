@@ -7,8 +7,34 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /*
-* Start: 14.03.2022 ~ 01:43
-* End: ?
+* Start:    14.03.2022 ~ 01:43
+* End:      14.03.2022 ~ 02:15
+*
+n = ?
+10
+n=10
+cislice 1 z cisla 10
+received: 0.006s.
+100
+n=100
+cislice 5 z cisla 55
+received: 0.005s.
+999
+n=999
+cislice 9 z cisla 369
+received: 0.001s.
+9000
+n=9000
+cislice 2 z cisla 2527
+received: 0.002s.
+12345
+n=12345
+cislice 3 z cisla 3363
+received: 0.001s.
+99999
+n=99999
+cislice 1 z cisla 22221
+received: 0.0s.
 * */
 public class Uloha1 {
 
