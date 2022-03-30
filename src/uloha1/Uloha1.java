@@ -1,6 +1,8 @@
 package uloha1;
 
+
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -40,16 +42,24 @@ public class Uloha1 {
 
     public static void main(String[] args) {
         long started = System.currentTimeMillis();
-        Random random = new Random();
+
+        File loadingFile = new File("test.txt");
 
         String rada = "";
         ArrayList<Rozpeti> rozpetiArrayList = new ArrayList<>();
-        for (int i = 1; i <= 30000; i++) { // for testing only
-            int len = rada.length() + 1;
-            rada += "" + i;
-            rozpetiArrayList.add(new Rozpeti(len, rada.length(), i));
+        if (loadingFile.exists()) {
+
+
+
+        } else {
+            for (int i = 1; i <= 30000; i++) { // for testing only
+                int len = rada.length() + 1;
+                rada += "" + i;
+                rozpetiArrayList.add(new Rozpeti(len, rada.length(), i));
+            }
+            System.out.println(rada);
         }
-        System.out.println(rada);
+
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         try {
